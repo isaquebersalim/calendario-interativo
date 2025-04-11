@@ -20,8 +20,6 @@ function colorirDia(){
     else{
         alert('Favor informar um dia do calendário');
     }
-
-
 }
 
 
