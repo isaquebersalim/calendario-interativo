@@ -53,4 +53,9 @@ let contadorAzul = 0, contadorVerde = 0, contadorRosa = 0, contadorRoxo = 0;
         contadorRoxo++;
         console.log(contadorRoxo);
     }
+    
+document.getElementById('cont-azul').innerText = contadorAzul;
+document.getElementById('cont-verde').innerText = contadorVerde;
+document.getElementById('cont-rosa').innerText = contadorRosa;
+document.getElementById('cont-roxo').innerText = contadorRoxo;
 }
