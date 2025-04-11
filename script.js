@@ -12,5 +12,16 @@ function colorirDia(){
       if(!days){
         alert('Favor informar o dia');
     }
+    else if((days > 0) && (days < 31)){
+        // Se o número de dias está no intervalo valor, aplicará a cor na célula do calendário
+        let td = calendar.getElementsByTagName('td')[parseInt(days)+1];
+        td.style.backgroundColor = color;
+    }
+    else{
+        alert('Favor informar um dia do calendário');
+    }
+
 
 }
+
+
