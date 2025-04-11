@@ -20,7 +20,6 @@ function colorirDia(){
     else{
         alert('Favor informar um dia do calendário');
     }
-}
 
 // Elemento para guardar a célula na tabela
 let elementos = document.querySelectorAll('td');
@@ -37,7 +36,7 @@ let contadorAzul = 0, contadorVerde = 0, contadorRosa = 0, contadorRoxo = 0;
     var corEstilo = estilo.backgroundColor;
 
     // Verifica a cor e incrementa contador correspondente
-    if(corEstilo === "rgb(173,216,230)" || corEstilo === "lightblue"){
+    if(corEstilo === "rgb(rgb(173, 216, 230))" || corEstilo === "lightblue"){
         contadorAzul++;
         console.log(contadorAzul);
     }
@@ -54,8 +53,9 @@ let contadorAzul = 0, contadorVerde = 0, contadorRosa = 0, contadorRoxo = 0;
         console.log(contadorRoxo);
     }
     
-document.getElementById('cont-azul').innerText = contadorAzul;
-document.getElementById('cont-verde').innerText = contadorVerde;
-document.getElementById('cont-rosa').innerText = contadorRosa;
-document.getElementById('cont-roxo').innerText = contadorRoxo;
+document.getElementById('contAzul').innerText = contadorAzul;
+document.getElementById('contVerde').innerText = contadorVerde;
+document.getElementById('contRosa').innerText = contadorRosa;
+document.getElementById('contRoxo').innerText = contadorRoxo;
+}
 }
