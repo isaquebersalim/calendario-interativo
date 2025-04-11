@@ -36,7 +36,7 @@ let contadorAzul = 0, contadorVerde = 0, contadorRosa = 0, contadorRoxo = 0;
     var corEstilo = estilo.backgroundColor;
 
     // Verifica a cor e incrementa contador correspondente
-    if(corEstilo === "rgb(rgb(173, 216, 230))" || corEstilo === "lightblue"){
+    if(corEstilo === "rgb(173, 216, 230)" || corEstilo === "lightblue"){
         contadorAzul++;
         console.log(contadorAzul);
     }
