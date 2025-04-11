@@ -7,4 +7,10 @@ function colorirDia(){
 
     // Pega os elementos da tabela calendário
     let calendar = document.getElementById('calendar');
+
+      // Verifica se o campo de dia foi preenchido
+      if(!days){
+        alert('Favor informar o dia');
+    }
+
 }
