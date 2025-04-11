@@ -28,8 +28,29 @@ let elementos = document.querySelectorAll('td');
 // Declara e inicializa contadores
 let contadorAzul = 0, contadorVerde = 0, contadorRosa = 0, contadorRoxo = 0;
 
-// Loop para verificar o estilo de cada célula e contar quantas cores e qual a cor
-for(let i = 0; i < elementos.length; i++){
+ // Loop para verificar o estilo de cada célula e contar quantas tem cor e qual cor
+ for(let i = 0; i < elementos.length; i++){
     // Obtém o estilo computado do elemento atual
     var estilo = window.getComputedStyle(elementos[i]);
+
+    //Obtém a cor de fundo atual da cédula
+    var corEstilo = estilo.backgroundColor;
+
+    // Verifica a cor e incrementa contador correspondente
+    if(corEstilo === "rgb(173,216,230)" || corEstilo === "lightblue"){
+        contadorAzul++;
+        console.log(contadorAzul);
+    }
+    else if(corEstilo === "rgb(152, 251, 152)" || corEstilo === "palegreen"){
+        contadorVerde++;
+        console.log(contadorVerde);
+    }
+    else if(corEstilo === "rgb(255, 182, 193)" || corEstilo === "lightpink"){
+        contadorRosa++;
+        console.log(contadorRosa);
+    }
+    else if(corEstilo === "rgb(106, 90, 205)" || corEstilo === "slateblue"){
+        contadorRoxo++;
+        console.log(contadorRoxo);
+    }
 }
