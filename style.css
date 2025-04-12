@@ -1,15 +1,97 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.calendar, th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
+body {
+    background: #f4f6f9;
+    padding: 30px;
+    color: #333;
+}
+
+h1, h2 {
     text-align: center;
-    width: 350px;
-    height: 30px;
+    margin-bottom: 10px;
 }
 
-th{
-    background-color: yellow;
+.calendar {
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+th {
+    background: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    padding: 8px;
+    box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+td {
+    background: #f0f0f0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+td:hover {
+    background-color: #d6eaff;
+}
+
+label, select, input, ul {
+    display: block;
+    margin: 10px auto;
+    max-width: 300px;
+    font-size: 15px;
+}
+
+select, input[type=number], input[type=submit] {
+    padding: 8px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+input[type=submit] {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #357ab8;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul li {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.paraContagemCor {
+    text-align: center;
 }
